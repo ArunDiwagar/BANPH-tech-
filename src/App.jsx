@@ -1,17 +1,19 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Table from './component/Table';
-import Form from './component/Form';
+import Navbar from './component/Navbar';
+import Header from './component/Header';
+import LogoSection from './component/LogoSection';
+import VisionMissionSection from './component/VissionMission';
+import './index.css'
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Table />} />
-        <Route path="/form" element={<Form />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <Navbar />
+      <Header />
+      <LogoSection />
+      <VisionMissionSection />
+    </div>
   );
-};
+}
 
 export default App;
